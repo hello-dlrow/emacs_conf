@@ -1,2 +1,1 @@
-# My emacs configuration.
-# Orign created by Steve Purcell
+# My emacs configuration.Origin created by Steve Purcell
