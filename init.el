@@ -5,6 +5,20 @@
 ;; a number of other files.
 
 ;;; Code:
+(desktop-save-mode)
+
+(add-to-list 'auto-mode-alist '("\\.txt\\'" . org-mode))
+
+(setq org-confirm-babel-evaluate nil)
+
+(setq org-src-fontify-natively t)
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((emacs-lisp . t)
+   (clojure . t)
+   (python . t)
+   (ruby . t)))
 
 ;; Produce backtraces when errors occur: can be helpful to diagnose startup issues
 ;;(setq debug-on-error t)
